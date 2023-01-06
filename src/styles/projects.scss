@@ -50,6 +50,10 @@
       overflow: hidden;
       width: 750px;
 
+      #ReactSimpleImageViewer {
+        z-index: 10;
+      }
+
       .projects-about {
         display: flex;
         width: 60vw;
@@ -64,12 +68,24 @@
         justify-content: space-around;
         align-items: center;
         align-content: center;
-        width: 500px;
-        height: 500px;
+        height: 540px;
+        width: 300px;
 
         img {
           width: 1000px;
           height: 800vh;
+        }
+
+        .img-viewer {
+          z-index: 10;
+        }
+
+        .photo-caption {
+          display: flex;
+          justify-content: space-between;
+          word-wrap: wrap;
+          height: 100px;
+          width: 150px;
         }
 
 

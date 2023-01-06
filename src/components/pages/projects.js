@@ -20,11 +20,6 @@ function Projects() {
   useEffect(() => {
   }, [isInView1, isinView2])
 
-  // const [devOpen, setDevOpen] = useState(false)
-  // const [reduxOpen, setReduxOpen] = useState(false)
-  // const [letGoOpen, setLetsGoOpen] = useState(false)
-  // const [elScanner, setElScannerOpen] = useState(false)
-
   const devImages = [
     "/images/devfries_screenshots/devfries1.png",
     "/images/devfries_screenshots/devfries2.png",
@@ -78,17 +73,38 @@ function Projects() {
   ]
 
   const [currentImage, setCurrentImage] = useState(0);
-  const [isViewerOpen, setIsViewerOpen] = useState(false);
+  const [isDevFriesViewerOpen, setDevFriesViewerOpen] = useState(false);
+  const [isEcomViewerOpen, setEcomViewerOpen] = useState(false);
+  const [isElScannerViewerOpen, setElScannerViewerOpen] = useState(false);
+  const [isLetsGoVocabViewerOpen, setLetsGoVocabViewerOpen] = useState(false);
 
 
-  const openImageViewer = useCallback((index) => {
+  const openDevFriesImageViewer = useCallback((index) => {
     setCurrentImage(index);
-    setIsViewerOpen(true);
+    setDevFriesViewerOpen(true);
+  }, []);
+
+  const openEcomImageViewer = useCallback((index) => {
+    setCurrentImage(index);
+    setEcomViewerOpen(true);
+  }, []);
+
+  const openElScannerImageViewer = useCallback((index) => {
+    setCurrentImage(index);
+    setElScannerViewerOpen(true);
+  }, []);
+
+  const openLetsGoVocabImageViewer = useCallback((index) => {
+    setCurrentImage(index);
+    setLetsGoVocabViewerOpen(true);
   }, []);
 
   const closeImageViewer = () => {
     setCurrentImage(0);
-    setIsViewerOpen(false);
+    setDevFriesViewerOpen(false);
+    setEcomViewerOpen(false);
+    setElScannerViewerOpen(false);
+    setLetsGoVocabViewerOpen(false);
   };
 
   return (
@@ -105,32 +121,37 @@ function Projects() {
         transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1)"}}>Projects</h2>
       <div className="projects-wrapper-inner">
         <div className="projects-about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rerum iusto eius est cum, exercitationem expedita nesciunt non voluptates nobis ipsam molestias reprehenderit eos magni laboriosam? Fuga doloremque esse temporibus quia. Praesentium hic nam, odit minus fugit fugiat error delectus. Velit eius doloribus repudiandae repellat impedit, est perferendis explicabo dolorum?</div>
-        <div className="projects-photo-wrapper">
-          <img className="photo-caption-wrapper"
-            src={devFries}
-            onClick={ () => openImageViewer(devImages.indexOf("/images/devfries_screenshots/devfries1.png")) }
-            alt=""
-          />
+          <div className="projects-photo-wrapper">
+            <img className="photo-caption-wrapper"
+              src={devFries}
+              onClick={ () => openDevFriesImageViewer(devImages.indexOf("/images/devfries_screenshots/devfries1.png")) }
+              alt=""
+            />
+            <div className="photo-caption">A proof of concept site incorporating the Google Maps API</div>
 
-          <img className="photo-caption-wrapper"
-            src={ecom}
-            onClick={ () => openImageViewer(ecomImages.indexOf("/images/ecom_redux_screenshots/ecom1.png")) }
-            alt=""
-          />
+            <img className="photo-caption-wrapper"
+              src={ecom}
+              onClick={ () => openEcomImageViewer(ecomImages.indexOf("/images/ecom_redux_screenshots/ecom1.png")) }
+              alt=""
+            />
+            <div className="photo-caption">An Ecommerce site concept project</div>
 
-          <img className="photo-caption-wrapper"
-            src={elscanner}
-            onClick={ () => openImageViewer(elscannerImages.indexOf("/images/elscanner_screenshots/elscanner1.png")) }
-            alt=""
-          />
+            <img className="photo-caption-wrapper"
+              src={elscanner}
+              onClick={ () => openElScannerImageViewer(elscannerImages.indexOf("/images/elscanner_screenshots/elscanner1.png")) }
+              alt=""
+            />
+            <div className="photo-caption">A library checkout system implemented at my school; utilizes the user's smartphone camera to scan QR and barcodes</div>
 
-          <img className="photo-caption-wrapper"
-            src={letsgovocab}
-            onClick={ () => openImageViewer(letsgovocabScreenshots.indexOf("/images/letsgovocab_screenshots/letsgovocab1.png")) }
-            alt=""
-          />
+            <img className="photo-caption-wrapper"
+              src={letsgovocab}
+              onClick={ () => openLetsGoVocabImageViewer(letsgovocabScreenshots.indexOf("/images/letsgovocab_screenshots/letsgovocab1.png")) }
+              alt=""
+            />
+            <div className="photo-caption">A vocabulary practice app utilizing Python, React and MongoDB Atlas</div>
+          </div>
           
-        {isViewerOpen && (
+        {isDevFriesViewerOpen && (
           <ImageViewer
             className="img-viewer"
             src={ devImages }
@@ -141,7 +162,7 @@ function Projects() {
           />
         )}
 
-        {isViewerOpen && (
+        {isEcomViewerOpen && (
           <ImageViewer
             className="img-viewer"
             src={ ecomImages }
@@ -152,7 +173,7 @@ function Projects() {
           />
         )}
 
-        {isViewerOpen && (
+        {isElScannerViewerOpen && (
           <ImageViewer
             className="img-viewer"
             src={ elscannerImages }
@@ -163,7 +184,7 @@ function Projects() {
           />
         )}
 
-        {isViewerOpen && (
+        {isLetsGoVocabViewerOpen && (
           <ImageViewer
             className="img-viewer"
             src={ letsgovocabScreenshots }
@@ -173,7 +194,6 @@ function Projects() {
             onClose={ closeImageViewer }
           />
         )}
-        </div>
       </div>
     </div> 
   </div>
