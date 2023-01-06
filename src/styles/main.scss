@@ -1,0 +1,68 @@
+body {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  opacity: 1;
+  transition-duration: 0.7s;
+  transition-property: opacity;
+}
+
+body.fade {
+  width: 100vw;
+  opacity: 0;
+  background-color: white;
+}
+
+.App {
+  text-align: center;
+
+  // animations
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }  
+  }
+
+  @keyframes fullStackTitleSlideFromLeft {
+    0% {
+      transform: translate(-300px, 75px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translate(75px, 75px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes listItemSlideFromLeft {
+    0% {
+      transform: translate(-300px, 0px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes SlideFromRight {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+}
+
+@import './background-layer.scss';
+@import './certifications.scss';
+@import './contact.scss';
+@import './projects.scss';
+@import './hero.scss';
+@import './navbar.scss';
+@import './title-slide.scss';

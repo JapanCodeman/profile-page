@@ -1,0 +1,32 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# videos
+/src/assets/binary_code_background2.mp4
+/src/assets/Code_flythough_loop_01_Videvo.mov
+/src/assets/code_splash.jpeg
+/src/assets/hd0924_preview.mp4
+/src/assets/side_profile_cutout copy.jpeg
+/src/assets/side_profile_cutout.png
+/src/assets/side_profile.png

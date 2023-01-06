@@ -1,0 +1,12 @@
+.bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  .hero-video {
+    height: 60vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+}
