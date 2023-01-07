@@ -9,10 +9,19 @@
   // z-index: 1;
 
   .hero-text-wrapper {
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
     margin-top: 10vh;
     text-shadow: black;
+
+    .name-sign {
+      display: flex;
+      align-self: left;
+      font-family: 'Tangerine', cursive;
+      font-size: 128px;
+      color: white;
+      margin-left: 5vw;
+    }
 
     .hero-title {
       height: 20vh;

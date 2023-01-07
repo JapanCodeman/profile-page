@@ -4,6 +4,7 @@ function HeroPage() {
   return (
     <div className="hero-wrapper">
       <div className="hero-text-wrapper">
+        <div className="name-sign">Ryan Surdick</div>
         <div className="hero-title">
           I want to work with you to build innovative web apps and sites
         </div>;
