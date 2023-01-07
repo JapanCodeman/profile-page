@@ -56,7 +56,6 @@
 
       .projects-about {
         display: flex;
-        width: 60vw;
         margin: 5vh;
         text-align: left;
       }
@@ -70,37 +69,6 @@
         align-content: center;
         height: 540px;
         width: 300px;
-
-        img {
-          width: 1000px;
-          height: 800vh;
-        }
-
-        .img-viewer {
-          z-index: 10;
-        }
-
-        .photo-caption {
-          display: flex;
-          justify-content: space-between;
-          word-wrap: wrap;
-          height: 100px;
-          width: 150px;
-        }
-
-
-        .photo-caption-wrapper {
-          display: flex;
-          flex-direction: column;
-          height: 100px;
-          width: auto;
-          transition: 0.3s;
-
-          &:hover {
-            height: 120px;
-            width: auto;
-          }
-        }
       }
     }
 
