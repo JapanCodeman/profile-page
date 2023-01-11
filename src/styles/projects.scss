@@ -46,8 +46,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 5vh 5vw;
-      overflow: hidden;
+      margin: 5vh 5vw 5vh 10vw;
+      // overflow: hidden;
       width: 750px;
 
       #ReactSimpleImageViewer {
@@ -66,9 +66,9 @@
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        align-content: center;
-        height: 540px;
-        width: 300px;
+        // align-content: center;
+        height: 750px;
+        width: 1000px;
       }
     }
 

@@ -1,7 +1,35 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+// import { Bounce } from 'react-reveal';
+
 import TitleSlide from '../helpers/titleSlide';
 
 function Certifications() {
+
+// const containerRef = useRef(null)
+// const [isVisible, setIsVisible] = useState(false)
+
+// const observerCallback = (entries) => {
+//   const [entry] = entries
+//   setIsVisible(entry.isIntersecting)
+// }
+
+// useEffect(() => {
+//   const options = {
+//     root: null,
+//     rootMargin: "0px",
+//     threshold: 1.0
+//   }
+
+//   const observer = new IntersectionObserver(observerCallback, options)
+//   if (containerRef.current) observer.observe(containerRef.current)
+
+//   // return () => {
+//   //   if(containerRef.current) observer.unobserve(containerRef.current)
+//   // }
+// }, [containerRef])
+  
+
   return (
     <div className="certifications-wrapper">
       <div className="certifications-title">
@@ -9,21 +37,25 @@ function Certifications() {
         <TitleSlide className="title-slide" title="Full Stack Certified" color="white" />
       </div>
     <div className="certifications-wrapper__left">
-      <div className="stack-list">
-        <ul>
-          <li>HTML5</li>
-          <li>CSS/SCSS</li>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>ReactJS Framework</li>
-          <li>Python</li>
-          <li>SQL</li>
-          <li>MongoDB (Atlas)</li>
-          <li>Redis</li>
-          <li>JQuery</li>
-          <li>UML/UX&UI</li>
-        </ul>
-      </div>
+      <motion.div className="stack-list"
+        initial={{ opacity: 0, transform: "translateX(-100px)" }}
+        whileInView={{ opacity: 1, transform: "translateX(0px)" }}
+        transition={{ duration: 2}}
+        >
+          <motion.ul>
+            <motion.li>HTML5</motion.li>
+            <motion.li>CSS/SCSS</motion.li>
+            <motion.li>JavaScript</motion.li>
+            <motion.li>TypeScript</motion.li>
+            <motion.li>ReactJS Framework</motion.li>
+            <motion.li>Python</motion.li>
+            <motion.li>SQL</motion.li>
+            <motion.li>MongoDB (Atlas)</motion.li>
+            <motion.li>Redis</motion.li>
+            <motion.li>JQuery</motion.li>
+            <motion.li>UML/UX&UI</motion.li>
+          </motion.ul>
+      </motion.div>
     </div>
 
     <div className="certifications-wrapper__right">

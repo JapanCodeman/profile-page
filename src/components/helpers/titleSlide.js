@@ -15,7 +15,7 @@ function TitleSlide(props) {
         y: 50,
         opacity: 1,
         transition: {
-          type: 'spring',
+          // type: 'spring',
           duration: 1,
           bounce: 0.3
         }

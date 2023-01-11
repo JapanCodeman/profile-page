@@ -1,3 +1,7 @@
+html {
+  overflow-y: overlay;
+}
+
 body {
   position: absolute;
   height: 100%;
@@ -22,41 +26,41 @@ body.fade {
     100% { opacity: 1; }  
   }
 
-  @keyframes fullStackTitleSlideFromLeft {
-    0% {
-      transform: translate(-300px, 75px);
-      opacity: 0;
-    }
+  // @keyframes fullStackTitleSlideFromLeft {
+  //   0% {
+  //     transform: translate(-300px);
+  //     opacity: 0;
+  //   }
 
-    100% {
-      transform: translate(75px, 75px);
-      opacity: 1;
-    }
-  }
+  //   100% {
+  //     transform: translate(75px);
+  //     opacity: 1;
+  //   }
+  // }
 
-  @keyframes listItemSlideFromLeft {
-    0% {
-      transform: translate(-300px, 0px);
-      opacity: 0;
-    }
+  // @keyframes listItemSlideFromLeft {
+  //   0% {
+  //     transform: translate(-300px, 0px);
+  //     opacity: 0;
+  //   }
 
-    100% {
-      transform: translate(0px, 0px);
-      opacity: 1;
-    }
-  }
+  //   100% {
+  //     transform: translate(0px, 0px);
+  //     opacity: 1;
+  //   }
+  // }
 
-  @keyframes SlideFromRight {
-    0% {
-      transform: translateX(200px);
-      opacity: 0;
-    }
+  // @keyframes SlideFromRight {
+  //   0% {
+  //     transform: translateX(200px);
+  //     opacity: 0;
+  //   }
 
-    100% {
-      transform: translateX(0px);
-      opacity: 1;
-    }
-  }
+  //   100% {
+  //     transform: translateX(0px);
+  //     opacity: 1;
+  //   }
+  // }
 }
 
 @import './background-layer.scss';

@@ -50,7 +50,12 @@
 
       .message {
         height: 100px;
-        width: 250px;
+        width: 500px;
+
+        &::placeholder {
+          text-align: center;
+          // transform: translateY(50pxv );
+        }
       }
     }
 
