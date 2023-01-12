@@ -1,58 +1,43 @@
 .hero-wrapper {
   display: flex;
   position: relative;
-  height: 400px;
+  height: 500px;
   width: 100vw;
-  padding-top: 5vh;
-  // align-items: flex-end;
+  padding-top: 80px;
   justify-content: space-between;
 
   .hero-text-wrapper {
     display: flex;
     flex-direction: column;
-    // margin-top: 10vh;
-    text-shadow: black;
+    flex-shrink: 0;
+    margin-top: 30px;
+    // text-shadow: black;
 
     .name-sign {
       display: flex;
-      align-self: left;
+      // align-self: left;
       font-family: 'Tangerine', cursive;
       font-size: 128px;
       color: white;
       margin-left: 5vw;
+      text-shadow: 2px 2px black;
     }
 
     .hero-title {
       height: 20vh;
       width: 60vw;
       color: #01a1ff;
+      margin-top: 20px;
       margin-left: 3vw;
       text-align: left;
       font-size: 48px;
       font-weight: 700;
       text-shadow: 2px 2px black;
     }
-
-    .hero-text, p {
-      width: 60vw;
-      margin-left: 5vw;
-      margin-top: 5vh;
-      color: white;
-      font-family: 'Roboto', sans-serif;
-      font-size: 24px;
-    }
-
-    p {
-      animation: fadeIn 2s;
-    }
   }
 
   .hero-photo, img {
-    // display: flex;
-    // align-self: flex-end;
-    // height: 400px;
-    width: 300px;
-    // background-color:fade-out($color: #000000, $amount: 1)
+    width: 360px;
   }
 }
 

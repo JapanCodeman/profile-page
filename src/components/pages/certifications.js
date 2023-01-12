@@ -59,8 +59,7 @@ function Certifications() {
     </div>
 
     <div className="certifications-wrapper__right">
-      <p className="about-certifications">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magni alias blanditiis mollitia. Impedit velit quibusdam corporis et cupiditate deleniti officiis minus pariatur debitis enim iste dolore mollitia rem praesentium sed esse vel repellat, ex consequatur, perferendis ducimus! Velit illo rerum voluptas autem facilis quam inventore consequuntur maxime alias pariatur.</p>
-        {/* <div className="binary-video-wrapper"> */}
+    <p className="about-certifications">Creativity. Ambition. A drive to see the best in people and projects. These are the qualities I want to bring towards any enterprise I'm involved with. I'm full stack certified in a variety of technologies and have a great deal of experience, international and domestic, to help forge the best teams and projects possible.</p>        {/* <div className="binary-video-wrapper"> */}
           <video className="binary-video" loop muted autoPlay={true} preload={"auto"} controls = ''>
             <source src={require("../../assets/binary_code_background2.mp4")} type="video/mp4" />
             Your browser does not support the video tag.

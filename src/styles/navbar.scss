@@ -2,18 +2,19 @@
   // display: flex;
   position: fixed;
   height: 5vh;
-  margin: 3vh 3vw;
+  // margin: 3vh 3vw;
   width: 100vw;
   z-index: 5;
 
   .navbar-buttons {
     display: flex;
     float: right;
-    margin-right: 10vw;
+    margin: 3vh 3vw;
     // align-items: flex-end;
     justify-content: space-around;
     height: 5vh;
     width: 50%;
+    min-width:450px;
     // z-index: 5;
 
     .navbar-button {
@@ -26,6 +27,7 @@
       border-radius: 25px;
       color: white;
       height: 100%;
+      min-height: 40px;
       width: 20%;
       transition: 0.3s;
 

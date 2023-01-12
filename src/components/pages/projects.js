@@ -74,20 +74,20 @@ function Projects() {
   ]
 
   return (
-    <div className="projects-wrapper">
-      <div className="projects-wrapper__left">
+    <div className="projects-page-wrapper">
+      <div className="projects-page-wrapper__left">
         <h2 className="multi-talent">A Multitude of Talents</h2>
       </div>
 
-      <div className="projects-wrapper__right">
-        <div className="projects-wrapper__right__blue-circle" />
+      <div className="projects-page-wrapper__right">
+        <div className="projects-page-wrapper__right__blue-circle" />
         <h2 className="projects-header" ref={slideInFromRight} style={{
           transform: isInView1 ? "none" : "translateX(75px)",
           opacity: isInView1 ? 1 : 0,
           transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1)"}}>Projects</h2>
-        <div className="projects-wrapper-inner">
-          <div className="projects-about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rerum iusto eius est cum, exercitationem expedita nesciunt non voluptates nobis ipsam molestias reprehenderit eos magni laboriosam? Fuga doloremque esse temporibus quia. Praesentium hic nam, odit minus fugit fugiat error delectus. Velit eius doloribus repudiandae repellat impedit, est perferendis explicabo dolorum?</div>
-            <div className="projects-photo-wrapper">
+        <div className="projects-about">These are a few of the projects I have built. Click on an image to open and view some various screenshots of the application. All apps and pages are fully responsive and use a variety of technologies to provide the most useful and easy to understand experience for the user.</div>
+          <div className="projects-wrapper">
+            <div className="projects-wrapper__row1">
               <ProjectFeature
                 thumbnail={devFries}
                 viewerImages={devImages}
@@ -99,7 +99,9 @@ function Projects() {
                 viewerImages={ecomImages}
                 caption={"An Ecommerce site concept project"}
               />
+            </div>
 
+            <div className="projects-wrapper__row2">
               <ProjectFeature
                 thumbnail={elscanner}
                 viewerImages={elscannerImages}
@@ -111,10 +113,10 @@ function Projects() {
                 viewerImages={letsgovocabImages}
                 caption={"A vocabulary practice app utilizing Python, React and MongoDB Atlas"}
               />
-        </div>
-      </div> 
+            </div>
+        </div> 
+      </div>
     </div>
-  </div>
   );
 }
 export default Projects;

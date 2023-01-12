@@ -1,7 +1,7 @@
 .certifications-wrapper {
   margin-top: -4px;
   display: grid;
-  grid-template-columns: [left-s] 1fr [left-e right-s] 1fr [right-e] 5vw;
+  grid-template-columns: [left-s] 1fr [left-e right-s] 1fr [right-e];
   grid-template-rows: [title-s] 200px [title-e row1-s] 200px [row1-e row2-s] 275px [row2-e];
   color: black;
   background: rgb(255,255,255);
@@ -28,11 +28,6 @@
       position: absolute;
       color:white;
       text-shadow: 2px 2px 2px #000000;
-      // background: #000000;
-      // background: linear-gradient(to top, #000000 25%, #FFFFFF 100%);
-      // background-clip: border-box;
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
     }
 
     .full-stack-title-animation {
@@ -66,14 +61,25 @@
     grid-row: row1-s/row1-e;
     grid-auto-flow: row;
     display: grid;
-    grid-template-rows: [row1-s] 150px [row1-e row2-s] 300px [row2-e];
+    grid-template-rows: [row1-s] 250px [row1-e row2-s] 300px [row2-e];
     align-items: center;
     width: 50vw;
 
     .about-certifications {
       grid-row: row1-s/row1-e;
-      align-self: flex-start;
-      text-indent: end;
+      margin: 0px 35px;
+      color: white;
+      font-family: "Roboto", cursive;
+      font-size: 24px;
+
+      p {
+        width: 60vw;
+        margin-left: 5vw;
+        margin-top: 5vh;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+      }
     }
 
     .binary-video {
