@@ -31,10 +31,11 @@ function ProjectFeature(props) {
         <ImageViewer
           className="img-viewer"
           src={ viewerImages }
-            currentIndex={ currentImage }
-            disableScroll={ true }
-            closeOnClickOutside={ true }
-            onClose={ closeImageViewer }
+          backgroundStyle={{backgroundColor: "black"}}
+          currentIndex={ currentImage }
+          disableScroll={ true }
+          closeOnClickOutside={ true }
+          onClose={ closeImageViewer }
           />
         )}
     </div>

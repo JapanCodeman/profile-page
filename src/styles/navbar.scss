@@ -1,8 +1,6 @@
 .navbar-wrapper {
-  // display: flex;
   position: fixed;
   height: 5vh;
-  // margin: 3vh 3vw;
   width: 100vw;
   z-index: 5;
 
@@ -10,12 +8,10 @@
     display: flex;
     float: right;
     margin: 3vh 3vw;
-    // align-items: flex-end;
     justify-content: space-around;
     height: 5vh;
     width: 50%;
     min-width:450px;
-    // z-index: 5;
 
     .navbar-button {
       display: flex;

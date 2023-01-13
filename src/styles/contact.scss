@@ -23,8 +23,8 @@
       align-items: center;
       justify-content: space-between;
       width: 300px;
-      height: 375px;
-      margin: 5vh;
+      height: 400px;
+      // margin: 5vh;
 
       input, textarea {
         background-color: transparent;
@@ -49,12 +49,14 @@
       }
 
       .message {
-        height: 100px;
-        width: 500px;
+        height: 50px;
+        width: 400px;
 
         &::placeholder {
           text-align: center;
-          // transform: translateY(50pxv );
+          align-self: baseline;
+          padding-top: 20px;
+          font-family: "Roboto", cursive;
         }
       }
     }
@@ -81,23 +83,23 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin: 20px 0px;
       width: 200px;
       height: 50px;
       font-size: 24px;
-      color: white;
-      z-index: 10;
 
-      link, a {
+      .link, a {
         text-decoration: none;
+        color: white;
         transition: 0.3s;
-
-        &:focus {
-          color: #01a1ff;
-        }
 
         &:visited {
           text-decoration: none;
           color: white;
+        }
+
+        &:hover {
+          color: #01a1ff;
         }
       }
     }

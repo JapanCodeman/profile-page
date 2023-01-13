@@ -37,6 +37,7 @@ function Contact() {
         <div className="contact-wrapper">
           <form onSubmit={onSubmit}>
             <input 
+              required={true}
               className="from-name"
               name="from_name"
               placeholder="Your name"
@@ -45,6 +46,7 @@ function Contact() {
             />
 
             <input
+              required={true}
               className="from-email"
               name="from_email"
               placeholder="Your email"
@@ -53,6 +55,7 @@ function Contact() {
             />
 
             <textarea
+              required={true}
               className="message"
               name="message"
               placeholder="message"
