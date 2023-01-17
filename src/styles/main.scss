@@ -1,18 +1,19 @@
 html {
   overflow-y: overlay;
+  overflow-x: hidden;
 }
 
 body {
-  position: absolute;
-  height: 100%;
-  width: 100vw;
+  // position: absolute;
+  // height: 100%;
+  // width: 100vw;
   opacity: 1;
   transition-duration: 0.7s;
   transition-property: opacity;
 }
 
 body.fade {
-  width: 100vw;
+  // width: 100vw;
   opacity: 0;
   background-color: white;
 }
@@ -25,42 +26,10 @@ body.fade {
     0% { opacity: 0; }
     100% { opacity: 1; }  
   }
+}
 
-  // @keyframes fullStackTitleSlideFromLeft {
-  //   0% {
-  //     transform: translate(-300px);
-  //     opacity: 0;
-  //   }
-
-  //   100% {
-  //     transform: translate(75px);
-  //     opacity: 1;
-  //   }
-  // }
-
-  // @keyframes listItemSlideFromLeft {
-  //   0% {
-  //     transform: translate(-300px, 0px);
-  //     opacity: 0;
-  //   }
-
-  //   100% {
-  //     transform: translate(0px, 0px);
-  //     opacity: 1;
-  //   }
-  // }
-
-  // @keyframes SlideFromRight {
-  //   0% {
-  //     transform: translateX(200px);
-  //     opacity: 0;
-  //   }
-
-  //   100% {
-  //     transform: translateX(0px);
-  //     opacity: 1;
-  //   }
-  // }
+@media only screen and (max-width: 390px) {
+  
 }
 
 @import './background-layer.scss';

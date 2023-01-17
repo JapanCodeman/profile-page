@@ -11,11 +11,9 @@
     flex-direction: column;
     flex-shrink: 0;
     margin-top: 30px;
-    // text-shadow: black;
 
     .name-sign {
       display: flex;
-      // align-self: left;
       font-family: 'Tangerine', cursive;
       font-size: 128px;
       color: white;
@@ -44,5 +42,53 @@
 .hero-fade {
   height: 20px;
   width: 100vw;
+}
+
+@media only screen and (max-width: 390px) {
+  .hero-wrapper {
+    display: flex;
+    position: relative;
+    height: 500px;
+    width: 100vw;
+    padding-top: 80px;
+    justify-content: space-between;
+  
+    .hero-text-wrapper {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      margin-top: 30px;
+  
+      .name-sign {
+        display: flex;
+        font-family: 'Tangerine', cursive;
+        font-size: 128px;
+        color: white;
+        margin-left: 5vw;
+        text-shadow: 2px 2px black;
+      }
+  
+      .hero-title {
+        height: 20vh;
+        width: 60vw;
+        color: #01a1ff;
+        margin-top: 20px;
+        margin-left: 3vw;
+        text-align: left;
+        font-size: 48px;
+        font-weight: 700;
+        text-shadow: 2px 2px black;
+      }
+    }
+  
+    .hero-photo, img {
+      width: 100px;
+    }
+  }
+  
+  .hero-fade {
+    height: 20px;
+    width: 100vw;
+  }
 }
 

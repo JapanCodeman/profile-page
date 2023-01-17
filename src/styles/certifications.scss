@@ -1,10 +1,10 @@
 .certifications-wrapper {
-  margin-top: -4px;
   display: grid;
   grid-template-columns: [left-s] 1fr [left-e right-s] 1fr [right-e];
   grid-template-rows: [title-s] 200px [title-e row1-s] 200px [row1-e row2-s] 275px [row2-e];
+  margin-top: -4px;
+  width: 100vw;
   color: black;
-  background: rgb(255,255,255);
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
   z-index: 1;
 

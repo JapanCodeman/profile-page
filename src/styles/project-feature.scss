@@ -24,3 +24,37 @@
     }
   }
 }
+
+@media only screen and (max-width: 970px) {
+
+  .project-feature {
+    height: 200px;
+    width: 100%;
+    margin: 30px;
+  
+    .project-image-and-caption-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      img {
+        max-height: 100px;
+        margin-bottom: 3vh;
+        transition: 0.3s;
+  
+        &:hover {
+          transform: scale(110%);
+        }
+      }
+  
+      .project-caption {
+        width: 500px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  
+}
