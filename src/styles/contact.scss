@@ -56,7 +56,7 @@
           text-align: center;
           align-self: baseline;
           padding-top: 20px;
-          font-family: "Roboto", cursive;
+          font-family: "Roboto", sans-serif;
         }
       }
     }
@@ -103,5 +103,14 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 481px) {
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
   }
 }
