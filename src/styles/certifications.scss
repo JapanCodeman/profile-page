@@ -115,18 +115,14 @@
 
 @media only screen and (min-width: 320px) and (max-width: 481px) {
   .certifications-wrapper {
-    display: grid;
-    grid-template-columns: [left-s] 1fr [left-e right-s] 1fr [right-e];
-    grid-template-rows: [title-s] 100px [title-e row1-s] 100px [row1-e row2-s] 275px [row2-e];
-    margin-top: -4px;
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     color: black;
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
     z-index: 1;
   
     .certifications-title {
-      grid-column: left-s/left-e;
-      grid-row: title-s/title-e;
       display: flex;
       margin: 2vh 0vw 0vh 2vw;
   
@@ -136,27 +132,23 @@
         border-radius: 100px;
         background-color: #01a1ff;
       }
-  
-      .full-stack-title-animation {
-        animation: fullStackTitleSlideFromLeft 1s 1;
-      }
     }
   
     &__left {
-      grid-column: left-s/left-e;
-      grid-row: row1-s/row1-e;
+      // grid-column: left-s/left-e;
+      // grid-row: row1-s/row1-e;
   
       .stack-list {
-        grid-column: left-s/left-e;
-        grid-row: row1-s/row2-e;
-        margin-left: 5vw;
+        margin: 0px;
         font-size: 24px;
         text-align: left;
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
       }
   
       li {
         margin-bottom: 1vh;
-        animation: listItemsSlideFromLeft .3s 1;
         color: white;
         text-shadow: 2px 2px 2px #000000;
       }
@@ -167,17 +159,19 @@
       grid-column: right-s/right-e;
       grid-row: row1-s/row1-e;
       grid-auto-flow: row;
-      display: grid;
-      grid-template-rows: [row1-s] 250px [row1-e row2-s] 300px [row2-e];
-      align-items: center;
-      width: 50vw;
+      display: block;
+      // grid-template-rows: [row1-s] 250px [row1-e row2-s] 300px [row2-e];
+      text-justify: center;
+      width: 100vw;
+      height: 300px;
   
       .about-certifications {
-        grid-row: row1-s/row1-e;
-        margin: 0px 35px;
+        width: 80vw;
+        margin: 2vh 5vw;
         color: white;
         font-family: "Roboto", sans-serif;
         font-size: 18px;
+        text-justify: center;
       }
   
       .binary-video {
@@ -195,19 +189,7 @@
       }
   
       .icons-wrapper {
-        position: absolute;
-        grid-row: row2-s/row2-e;
-        align-self: center;
-        justify-self: center;
-        max-height: 400px;
-        max-width: 400px;
-        z-index: 1;
-  
-        .icon {
-          margin: 20px 20px 20px 20px;
-          height: 40px;
-          width: 40px;
-        }
+        display: none;
       }
     }
   }

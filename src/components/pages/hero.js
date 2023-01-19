@@ -3,6 +3,7 @@ import React from 'react';
 function HeroPage() {
   return (
     <div className="hero-wrapper">
+      <img className="hero-photo-mobile" src={require("../../assets/headshot_bluecircle.png")} alt="profile pic" />
       <div className="hero-text-wrapper">
         <div className="name-sign">Ryan Surdick</div>
         <div className="hero-title">

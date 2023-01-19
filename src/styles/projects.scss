@@ -92,19 +92,7 @@
     width: 100vw;
     
     &__left {
-      display: flex;
-      width: 25vw;
-      align-items: center;
-      justify-content: center;
-      background-color: black;
-      color: white;
-      border-bottom-right-radius: 500px;
-
-      .multi-talent {
-        font-size: 32px;
-        text-justify: center;
-        margin: 0vh 5vw;
-      }
+      display: none;
     }
 
     &__right {
