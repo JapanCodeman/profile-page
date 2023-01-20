@@ -37,10 +37,13 @@ function Certifications() {
         <TitleSlide className="title-slide" title="Full Stack Certified" color="white" />
       </div>
     <div className="certifications-wrapper__left">
+      <video className="binary-video-mobile" loop muted autoPlay={true} preload={"auto"} controls = '' poster="../../assets/binary_code_background2_still.png">
+        <source src={require("../../assets/binary_code_background2.mp4")} type="video/mp4" />
+      </video>
       <motion.div className="stack-list"
         initial={{ opacity: 0, transform: "translateX(-100px)" }}
         whileInView={{ opacity: 1, transform: "translateX(0px)" }}
-        transition={{ duration: 2}}
+        transition={{ duration: 1}}
         >
           <motion.ul>
             <motion.li>HTML5</motion.li>

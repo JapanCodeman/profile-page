@@ -82,7 +82,7 @@ function Projects() {
       <div className="projects-page-wrapper__right">
         <div className="projects-page-wrapper__right__blue-circle" />
         <h2 className="projects-header" ref={slideInFromRight} style={{
-          transform: isInView1 ? "none" : "translateX(75px)",
+          transform: isInView1 ? "translate(60px, 20px)" : "translateX(75px)",
           opacity: isInView1 ? 1 : 0,
           transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1)"}}>Projects</h2>
         <div className="projects-about">These are a few of the projects I have built. Click on an image to open and view some various screenshots of the application. All apps and pages are fully responsive and use a variety of technologies to provide the most useful and easy to understand experience for the user.</div>
