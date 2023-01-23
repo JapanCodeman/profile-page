@@ -41,8 +41,8 @@ function Certifications() {
         <source src={require("../../assets/binary_code_background2.mp4")} type="video/mp4" />
       </video>
       <motion.div className="stack-list"
-        initial={{ opacity: 0, transform: "translateX(-100px)" }}
-        whileInView={{ opacity: 1, transform: "translateX(0px)" }}
+        initial={{ opacity: 0, transform: "translate(-100px, 25px)" }}
+        whileInView={{ opacity: 1, transform: "translate(0px, 25px)" }}
         transition={{ duration: 1}}
         >
           <motion.ul>

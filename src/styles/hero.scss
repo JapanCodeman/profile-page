@@ -21,7 +21,7 @@
       font-family: 'Roboto', sans-serif;
       font-size: 96px;
       color: white;
-      margin-left: 5vw;
+      margin-left: min(5vw);
       text-shadow: 2px 2px black;
     }
 
@@ -52,37 +52,41 @@
   .hero-wrapper {
     padding-top: 0px;
     height: 100vh;
+    justify-content: start;
 
     .hero-photo-mobile {
       display: block;
       align-self: self-start;
-      height: 200px;
-      width: min-content;
+      height: auto;
+      width: 50vw;
       transform: translate(15px, 120px);
     }
   
     .hero-text-wrapper {
       display: flex;
       flex-direction: column;
-      width: 200px;
+      width: 0px;
       margin-top: 150px;
   
       .name-sign {
         width: min-content;
         font-family: 'Roboto';
-        margin-left: 0px;
-        font-size: 48px;
+        // margin-left: 0px;
+        margin-right: min(5vw);
+        font-size: 11vw;
         color: white;
         text-shadow: 2px 2px black;
       }
   
       .hero-title {
         // width: 80vw;
+        height: min-content;
         text-align: center;
-        font-size: 56px;
-        margin: 0px;
+        font-size: 13vw;
+        margin-left: min(5vw);
+        margin-right: min(5vw);
         padding-top: 0px;
-        transform: translate(-190px, 50px);
+        transform: translate(-60%, 50px);
       }
     }
   

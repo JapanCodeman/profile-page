@@ -7,7 +7,7 @@
     justify-content: space-around;
     height: 5vh;
     width: 500px;
-    min-width: 450px;
+    // min-width: 450px;
 
     .navbar-button {
       display: flex;
@@ -38,6 +38,7 @@
     display: flex;
     width: 90vw;
     position: fixed;
+    margin: min(5vw);
 
     .navbar-button {
       display: flex;
@@ -48,8 +49,8 @@
       border: 1px solid white;
       border-radius: 25px;
       color: white;
-      height: 100%;
-      min-height: 40px;
+      // height: 100%;
+      height: min(40px);
       width: 20%;
       transition: 0.3s;
 
