@@ -64,24 +64,25 @@
     .hero-text-wrapper {
       display: flex;
       flex-direction: column;
+      width: 200px;
       margin-top: 150px;
   
       .name-sign {
         width: min-content;
         font-family: 'Roboto';
-        margin-left: 12vw;
+        margin-left: 0px;
         font-size: 48px;
         color: white;
         text-shadow: 2px 2px black;
       }
   
       .hero-title {
-        width: 80vw;
+        // width: 80vw;
         text-align: center;
         font-size: 56px;
-        margin: 10px;
-        padding-top: 30px;
-        transform: translate(-170px, 50px);
+        margin: 0px;
+        padding-top: 0px;
+        transform: translate(-190px, 50px);
       }
     }
   

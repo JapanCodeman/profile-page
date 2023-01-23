@@ -1,6 +1,6 @@
 html {
   overflow-y: overlay;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 body {
@@ -10,6 +10,7 @@ body {
   opacity: 1;
   transition-duration: 0.7s;
   transition-property: opacity;
+  scrollbar-width: thin;
 }
 
 body.fade {
