@@ -66,8 +66,9 @@ function Contact() {
           />
           <button className="send-message" type="submit">Send Message</button>
         </form>
+      </div>
 
-        <div className="social-media-links">
+      <div className="social-media-links">
           <a className="link" href="https://github.com/JapanCodeman">
             <FontAwesomeIcon className="github-icon" icon={"fa-brands fa-github"}/>
             <p>Github</p>
@@ -78,7 +79,6 @@ function Contact() {
             <p>LinkedIn</p>
           </a>
         </div>
-      </div>
     </div>
   );
 }
