@@ -1,13 +1,12 @@
 .navbar-buttons {
     display: flex;
     position: fixed;
-    z-index: 5;
+    z-index: 1;
     float: right;
     margin: 3vh 3vw;
     justify-content: space-around;
     height: 5vh;
     width: 500px;
-    // min-width: 450px;
 
     .navbar-button {
       display: flex;

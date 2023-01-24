@@ -1,7 +1,7 @@
 import './styles/main.scss';
 
 // import { library } from '@fortawesome/fontawesome-svg-core'
-// import { fab, faGithub } from '@fortawesome/free-brands-svg-icons'
+// import { fab, faGithub } from '@fortawesome/free-regular-svg-icons'
 // import {  } from '@fortawesome/free-solid-svg-icons'
 
 import NavBar from './components/navBar';

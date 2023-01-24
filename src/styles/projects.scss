@@ -1,5 +1,6 @@
 .projects-page-wrapper {
   display: flex;
+  justify-content: center;
   overflow: hidden;
 
   &__left {
@@ -31,7 +32,7 @@
       border-radius: 100px;
       background-color: #01a1ff;
       position: absolute;
-      transform: translateX(-90px);
+      transform: translateX(-100px);
       z-index: 0;
     }
 
@@ -61,7 +62,6 @@
         align-items: center;
         height: 100%;
         width: 75vw;
-        z-index: 3;
 
         &__row1 {
           display: flex;
@@ -69,6 +69,10 @@
           justify-content: space-around;
           height: 425px;
           width: 100%;
+
+          .project-feature {
+            width: auto;
+          }
         }
 
         &__row2 {
@@ -77,6 +81,10 @@
           justify-content: space-around;
           height: 425px;
           width: 100%;
+
+          .project-feature {
+            width: auto;
+          }
         }
       }
     }
@@ -143,9 +151,17 @@
 
       .projects-wrapper {
         width: 100vw;
+
         &__row1, &__row2 {
-          display: block;
-          height: 500px;
+          display: contents;
+
+          .project-feature {
+            height: 320px;
+
+            .project-image-and-caption-wrapper {
+              margin: 30px;
+            }
+          }
         }
       }
     }

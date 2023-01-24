@@ -34,48 +34,49 @@ function Contact() {
       <div className="contact-title">
         <div className="blue-circle" />
         <TitleSlide className="title-slide" title="Contact Me" color={"white"} />
-        <div className="contact-wrapper">
-          <form onSubmit={onSubmit}>
-            <input 
-              required={true}
-              className="from-name"
-              name="from_name"
-              placeholder="Your name"
-              value={toSend.from_name}
-              onChange={handleChange}
-            />
+      </div>
 
-            <input
-              required={true}
-              className="from-email"
-              name="from_email"
-              placeholder="Your email"
-              value={toSend.from_email}
-              onChange={handleChange}
-            />
+      <div className="contact-wrapper">
+        <form onSubmit={onSubmit}>
+          <input 
+            required={true}
+            className="from-name"
+            name="from_name"
+            placeholder="Your name"
+            value={toSend.from_name}
+            onChange={handleChange}
+          />
 
-            <textarea
-              required={true}
-              className="message"
-              name="message"
-              placeholder="message"
-              value={toSend.message}
-              onChange={handleChange}
-            />
-            <button className="send-message" type="submit">Send Message</button>
-          </form>
+          <input
+            required={true}
+            className="from-email"
+            name="from_email"
+            placeholder="Your email"
+            value={toSend.from_email}
+            onChange={handleChange}
+          />
 
-          <div className="social-media-links">
-            <a className="link" href="https://github.com/JapanCodeman">
-              <FontAwesomeIcon icon={"fa-brands fa-github"}/>
-              Github
-            </a>
+          <textarea
+            required={true}
+            className="message"
+            name="message"
+            placeholder="message"
+            value={toSend.message}
+            onChange={handleChange}
+          />
+          <button className="send-message" type="submit">Send Message</button>
+        </form>
 
-            <a className="link" href="https://www.linkedin.com/in/ryan-surdick-072533219/">
-              <FontAwesomeIcon icon={"fa-brands fa-linkedin"} />
-              LinkedIn
-            </a>
-          </div>
+        <div className="social-media-links">
+          <a className="link" href="https://github.com/JapanCodeman">
+            <FontAwesomeIcon className="github-icon" icon={"fa-brands fa-github"}/>
+            <p>Github</p>
+          </a>
+
+          <a className="link" href="https://www.linkedin.com/in/ryan-surdick-072533219/">
+            <FontAwesomeIcon className="linked-in-icon" icon={"fa-brands fa-linkedin"} />
+            <p>LinkedIn</p>
+          </a>
         </div>
       </div>
     </div>
