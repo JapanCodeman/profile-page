@@ -1,34 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-// import { Bounce } from 'react-reveal';
 
 import TitleSlide from '../helpers/titleSlide';
 
 function Certifications() {
-
-// const containerRef = useRef(null)
-// const [isVisible, setIsVisible] = useState(false)
-
-// const observerCallback = (entries) => {
-//   const [entry] = entries
-//   setIsVisible(entry.isIntersecting)
-// }
-
-// useEffect(() => {
-//   const options = {
-//     root: null,
-//     rootMargin: "0px",
-//     threshold: 1.0
-//   }
-
-//   const observer = new IntersectionObserver(observerCallback, options)
-//   if (containerRef.current) observer.observe(containerRef.current)
-
-//   // return () => {
-//   //   if(containerRef.current) observer.unobserve(containerRef.current)
-//   // }
-// }, [containerRef])
-  
 
   return (
     <div className="certifications-wrapper">
@@ -63,7 +38,7 @@ function Certifications() {
 
     <div className="certifications-wrapper__right">
     <p className="about-certifications">"Creativity, ambition and a drive to see the best in people and projects. These are the qualities I want to bring towards any enterprise I'm involved with. I'm full stack certified in a variety of technologies and have a great deal of experience, international and domestic, to help forge the best teams and projects possible."</p>
-          <video className="binary-video" loop muted autoPlay={true} preload={"auto"} controls = ''>
+          <video className="binary-video" loop muted autoPlay={true} preload={"auto"} controls = '' playsInline>
             <source src={require("../../assets/binary_code_background2.mp4")} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

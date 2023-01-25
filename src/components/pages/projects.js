@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 import { useInView } from 'framer-motion';
 
+import TitleSlide from '../helpers/titleSlide';
 import devFries from "../../assets/thumbnails/devfries1.png";
 import ecom from "../../assets/thumbnails/ecom4.png";
 import letsgovocab from "../../assets/thumbnails/letsgovocab1.png";
@@ -80,11 +81,15 @@ function Projects() {
       </div>
 
       <div className="projects-page-wrapper__right">
-        <div className="projects-page-wrapper__right__blue-circle" />
+        <div className="projects-title">
+          <div className="blue-circle" />
+          <TitleSlide className="title-slide" title="Projects" color="black" />
+        </div>
+        {/* <div className="projects-page-wrapper__right__blue-circle" />
         <h2 className="projects-header" ref={slideInFromRight} style={{
           transform: isInView1 ? "translate(-35px, 20px)" : "translateX(75px)",
           opacity: isInView1 ? 1 : 0,
-          transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1)"}}>Projects</h2>
+          transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1)"}}>Projects</h2> */}
         <div className="projects-about">"These are a few of the projects I have built. Click on an image to open and view some various screenshots of the application. All apps and pages are fully responsive and use a variety of technologies to provide the most useful and easy to understand experience for the user."</div>
           <div className="projects-wrapper">
             <div className="projects-wrapper__row1">

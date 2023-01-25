@@ -19,7 +19,7 @@ function BackGroundLayer() {
                     </video>`,
           }}
         /> */}
-      <video className="hero-video" loop muted={"true"} autoPlay={true} preload={"auto"} controls = '' playsInline>
+      <video className="hero-video" loop muted={true} autoPlay={true} preload={"auto"} controls = '' playsInline>
         <source src={require("../assets/hd0924_preview.mp4")} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
