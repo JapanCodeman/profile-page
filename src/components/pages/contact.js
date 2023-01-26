@@ -13,6 +13,8 @@ function Contact() {
     from_email: '',
     message: ''
   });
+
+  const [messageSent, setMessageSent] = useState(false)
   
   const handleChange = (e) => {
     setToSend({...toSend, [e.target.name]: e.target.value});
@@ -21,6 +23,7 @@ function Contact() {
   const onSubmit = (e) => {
     e.preventDefault();
     console.log("submitted")
+    setTimeout(setMessageSent(!messageSent), 2000)
     send(
       'service_7rtx08g',
       'template_9z5w99e',
@@ -64,7 +67,8 @@ function Contact() {
             value={toSend.message}
             onChange={handleChange}
           />
-          <button className="send-message" type="submit">Send Message</button>
+          {messageSent ? <div className="message-sent-note">Message sent, thank you!</div> : null}
+          <button className="send-message" type="submit" disabled={messageSent ? true : false}>Send Message</button>
         </form>
       </div>
 
