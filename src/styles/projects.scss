@@ -167,10 +167,13 @@
         width: 100vw;
 
         &__row1, &__row2 {
-          display: contents;
+          display: flex;
+          height: fit-content;
+          margin-bottom: 0px;
 
           .project-feature {
-            height: 320px;
+            height: fit-content;
+            margin-bottom: 25px;
             transform: translateX(0px);
 
             .project-image-and-caption-wrapper {
