@@ -9,7 +9,7 @@ function Certifications() {
     <div className="certifications-wrapper">
       <div className="certifications-title">
         <div className="blue-circle" />
-        <TitleSlide className="title-slide" title="Full Stack Certified" color="white" />
+        <TitleSlide className="title-slide" title="Full Stack Certified" color="white"  xEnd={50} xStart={-100} yEnd={50} yStart={50}/>
       </div>
     <div className="certifications-wrapper__left">
       <video className="binary-video-mobile" loop muted autoPlay={true} preload={"auto"} controls = '' poster="../../assets/binary_code_background2_still.png">

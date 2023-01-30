@@ -11,11 +11,11 @@ function TitleSlide(props) {
   useEffect(() => {
     if (inView) {
       animation.start({
-        x: 50,
-        y: 50,
+        x: props.xEnd,
+        y: props.yEnd,
         opacity: 1,
         transition: {
-          // type: 'spring',
+          type: 'spring',
           duration: 1,
           bounce: 0.3
         }
@@ -24,11 +24,11 @@ function TitleSlide(props) {
     if (!inView) {
       animation.start({
         opacity: 0,
-        x: -100,
-        y: 50
+        x: props.xStart,
+        y: props.yStart
       })
     }
-  }, [animation, inView, props.color])
+  }, [animation, inView, props.color, props.xEnd, props.xStart, props.yEnd, props.yStart])
 
   return (
     <motion.div 

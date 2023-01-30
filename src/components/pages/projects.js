@@ -76,15 +76,16 @@ function Projects() {
 
   return (
     <div className="projects-page-wrapper">
+      <div className="projects-title">
+        <div className="blue-circle" />
+        <TitleSlide className="title-slide" title="Projects" color="black"  xEnd={50} xStart={-100} yEnd={50} yStart={50}/>
+      </div>
+      
       <div className="projects-page-wrapper__left">
         <h2 className="multi-talent">A Multitude of Talents</h2>
       </div>
 
       <div className="projects-page-wrapper__right">
-        <div className="projects-title">
-          <div className="blue-circle" />
-          <TitleSlide className="title-slide" title="Projects" color="black" />
-        </div>
         <div className="projects-about">"These are a few of the projects I have built. Click on an image to open and view some various screenshots of the application. All apps and pages are fully responsive and use a variety of technologies to provide the most useful and easy to understand experience for the user."</div>
           <div className="projects-wrapper">
             <div className="projects-wrapper__row1">

@@ -47,7 +47,7 @@ function Contact() {
     <div className="contact-page">
       <div className="contact-title">
         <div className="blue-circle" />
-        <TitleSlide className="title-slide" title="Contact Me" color={"white"} />
+        <TitleSlide className="title-slide" title="Contact Me" color={"white"} xEnd={50} xStart={-100} yEnd={50} yStart={50}/>
       </div>
 
       <div className="contact-wrapper">
