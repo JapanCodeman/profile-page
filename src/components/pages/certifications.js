@@ -12,7 +12,7 @@ function Certifications() {
         <TitleSlide className="title-slide" title="Full Stack Certified" color="white"  xEnd={50} xStart={-100} yEnd={50} yStart={50}/>
       </div>
     <div className="certifications-wrapper__left">
-      <video className="binary-video-mobile" loop muted autoPlay={true} preload={"auto"} controls = '' poster="../../assets/binary_code_background2_still.png">
+      <video className="binary-video-mobile" loop muted={true} autoPlay={true} preload={"auto"} controls = '' playsInline poster={require("../../assets/binary_code_background2_still.jpg")}>
         <source src={require("../../assets/binary_code_background2.mp4")} type="video/mp4" />
       </video>
       <motion.div className="stack-list"

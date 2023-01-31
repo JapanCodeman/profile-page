@@ -55,7 +55,7 @@
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 481px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   .project-feature {
     height: 200px;
     width: auto;
@@ -75,9 +75,9 @@
           transform: scale(110%);
         }
       }
-  
+          
       .project-caption {
-        width: 300px;
+        width: 90vw;
         font-size: 24px;
       }
     }

@@ -1,6 +1,6 @@
 .certifications-wrapper {
   display: grid;
-  grid-template-columns: [left-s] 1fr [left-e right-s] 1fr [right-e];
+  grid-template-columns: [left-s] 1fr [left-e right-s] 2fr [right-e];
   grid-template-rows: [title-s] 200px [title-e row1-s] 200px [row1-e row2-s] 275px [row2-e];
   margin-top: -4px;
   width: 100vw;
@@ -68,11 +68,11 @@
     display: grid;
     grid-template-rows: [row1-s] 250px [row1-e row2-s] 300px [row2-e];
     align-items: center;
-    width: 50vw;
+    justify-self: right;
 
     .about-certifications {
       grid-row: row1-s/row1-e;
-      margin: 0px 35px;
+      margin-right: 50px;
       color: white;
       font-family: "Roboto", sans-serif;
       font-size: 24px;
@@ -117,7 +117,7 @@
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 481px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   #certifications {
     height: 35px;
     margin: -4px, 0;
@@ -144,8 +144,6 @@
     }
   
     &__left {
-      // grid-column: left-s/left-e;
-      // grid-row: row1-s/row1-e;
 
       .binary-video-mobile {
         display: block;
@@ -162,6 +160,7 @@
         columns: 2;
         -webkit-columns: 2;
         -moz-columns: 2;
+        max-height: 225px;
       }
   
       li {
@@ -174,14 +173,13 @@
   
     &__right {
       position: relative;
-      display: block;
+      display: flex;
       margin-top: 25px;
       width: 100vw;
 
       .about-certifications {
         width: 80vw;
-        margin-top: 85px;
-        margin-bottom: 50px;
+        margin: 85px 50px 0px 50px;
         color: black;
         font-family: "Roboto", sans-serif;
         font-size: 24px;

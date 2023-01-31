@@ -140,9 +140,9 @@
               max-height: 200px;
             }
 
-            .project-caption {
-              width: 400px;
-            }
+            // .project-caption {
+            //   width: 400px;
+            // }
           }
         }
       }
@@ -150,7 +150,7 @@
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 481px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
 
   .projects-page-wrapper {
     flex-direction: column;
@@ -177,7 +177,6 @@
     &__right {
       display: flex;
       flex-direction: column;
-      // align-items: center;
       width: 100vw;
 
       .projects-about {
